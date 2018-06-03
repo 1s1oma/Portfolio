@@ -1,0 +1,125 @@
+/* Responsive layout */
+*{
+    box-sizing: border-box;
+}
+
+/*page layout*/
+.page-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.main-content{
+    width: 75%;
+}
+
+.side-bar{
+    width: 20%;
+    order: -1;
+}
+
+/*content layout*/
+.header{
+    width: 100%;
+    height: auto;
+}
+
+.featured-work, .services{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/*featured work layout*/
+.header{
+    width: 100%;
+    margin-bottom: 0.1em;
+}
+
+.feature-1{
+    width: 33%;
+    height: auto;
+}
+
+.feature-2{
+    width: 33%;
+    height: auto;
+}
+
+.feature-3{
+    width: 33%;
+    height: auto;
+}
+
+a{
+    display: block;
+}
+
+/*services layout*/
+.services{
+    flex-direction: column;
+}
+
+/*repsonsive images*/
+img{
+    position: relative;
+    max-width: 100%;
+    height: auto;
+}
+
+.logo{
+    float: left;
+    max-height: 50px;
+    position: relative;
+    bottom: -7px;
+}
+
+.backgroung-image{
+    background-size: contain; 
+}
+
+.animal-trading-cards{
+    height: 250px;
+}
+
+.food-order-system{
+    height: 250px;
+}
+
+.pixel-art-maker{
+    height: 250px;
+}
+
+/*text*/
+.name{
+    float: right;
+    margin: 0.1em;
+}
+
+.description{
+   clear: both;
+   float: right;
+   margin-top: 0.1em;
+   margin-bottom: 0.3em;
+}
+
+hr{
+    display: block;
+    clear: both;
+}
+
+/*device reponsivenes*/
+/* @media screen and (max-width:700px){
+    .main-content{
+        width: 100%;
+        order: -1;
+    }
+    
+    .side-bar,.featured-work > p {
+        width: 100%;
+    }
+} */
