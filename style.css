@@ -4,7 +4,7 @@
 }
 
 /*page layout*/
-.page-container {
+.page-container{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -82,15 +82,7 @@ img{
     background-size: contain; 
 }
 
-.animal-trading-cards{
-    height: 250px;
-}
-
-.food-order-system{
-    height: 250px;
-}
-
-.pixel-art-maker{
+.animal-trading-cards, .food-order-system, .pixel-art-maker{
     height: 250px;
 }
 
@@ -112,14 +104,56 @@ hr{
     clear: both;
 }
 
-/*device reponsivenes*/
-/* @media screen and (max-width:700px){
-    .main-content{
+/*device reponsivenes*/ 
+
+/* Services side-bar */
+/* Tablet - 1st 2 featured items on same row*/
+@media screen and (min-width:650px) and (max-width:900px){
+    .main-content {
         width: 100%;
         order: -1;
     }
     
-    .side-bar,.featured-work > p {
+    .side-bar{
         width: 100%;
     }
-} */
+
+    .feature-3{
+        width: 100%;
+    }
+
+    .pixel-art-maker{
+        width: 100%;
+        height: auto;
+    }
+
+    .feature-1, .feature-2{
+        width: 50%;
+        height: auto;
+    }
+
+    .animal-trading-cards, .food-order-system{
+        height: 300px;
+    }
+}
+
+/* Mobile - each item/image on separate row*/
+@media screen and (max-width:650px)
+{
+    .main-content {
+        width: 100%;
+        order: -1;
+    }
+    
+    .side-bar{
+        width: 100%;
+    }
+
+    .feature-1, .feature-2, .feature-3{
+        width: 100%;
+    }
+
+    .animal-trading-cards, .food-order-system, .pixel-art-maker{
+        height: auto;
+    }
+}
