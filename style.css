@@ -108,7 +108,7 @@ hr{
 
 /* Services side-bar */
 /* Tablet - 1st 2 featured items on same row*/
-@media screen and (min-width:650px) and (max-width:900px){
+/* @media screen and (min-width:650px) and (max-width:900px){
     .main-content {
         width: 100%;
         order: -1;
@@ -135,10 +135,10 @@ hr{
     .animal-trading-cards, .food-order-system{
         height: 300px;
     }
-}
+} */
 
 /* Mobile - each item/image on separate row*/
-@media screen and (max-width:650px)
+/* @media screen and (max-width:650px)
 {
     .main-content {
         width: 100%;
@@ -156,4 +156,4 @@ hr{
     .animal-trading-cards, .food-order-system, .pixel-art-maker{
         height: auto;
     }
-}
+} */
